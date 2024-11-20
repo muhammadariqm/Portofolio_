@@ -14,6 +14,16 @@
     />
 
     <style>
+
+html, body {
+    overflow-x: hidden; /* Hilangkan scroll horizontal */
+    width: 100%; /* Pastikan lebar sesuai dengan viewport */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Pastikan padding dan border dihitung dalam lebar elemen */
+}
+
+
         *{
             padding: 0;
             margin: 0;
@@ -49,24 +59,23 @@
         .btn-home{
             border: none;
             background-color: #1672f2;
-            margin: 2rem;
+            margin: 1rem;
             display: flex;
             justify-content: flex-start;
         }
 
         #c1 {
-        padding-inline: '';
+        padding-inline: 0;
         padding-top: 2rem;
     }
     
-    .row>* {
-        flex-shrink: 0;
-        width: 100%;
-        max-width: '';
-        padding-right: '';
-        padding-left: '';
-        margin-top: var(--bs-gutter-y);
-    }
+    .row > * {
+    flex-shrink: 0;
+    max-width: 100%; /* Batasi lebar elemen hingga viewport */
+    padding-left: 1rem; /* Atur padding agar tidak melebihi grid */
+    padding-right: 1rem;
+}
+
 
     </style>
 </head>
