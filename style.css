@@ -1,0 +1,520 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Ruwudu";
+    background-color: #000;
+}
+
+#backToTopButton {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    display: none;
+    background-color: #b700ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToTopButton:hover {
+    background-color: #880abc;
+}
+
+.nama{
+    z-index: 4;
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 10%;
+    width: 100%;
+    position: absolute;
+    animation: animasiNama 2s infinite;
+}
+
+@keyframes animasiNama {
+    0% {
+    color: rgb(62, 62, 62);
+    font-size: 60px;
+}
+    50% {
+    color: #ffffff;
+    font-size: 66px;
+    }
+    100% {
+    color: black;
+    font-size: 60px;
+    }
+}
+
+/* Container untuk bintang */
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  
+  /* Bintang */
+  .star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle 2s infinite ease-in-out;
+  }
+  
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  /* Animasi random untuk beberapa bintang */
+  .star:nth-child(odd) {
+    animation-duration: 1.5s;
+  }
+  
+  .star:nth-child(even) {
+    animation-duration: 3s;
+  }
+
+/* Navigasi */
+
+.Nav{
+    height: 100vh;
+    background-image: url("/img/purple.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.Nav:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0) 50%);
+}
+
+.toggle-button{
+    display: none;
+}
+
+.navbar-links{
+    display: flex;
+    justify-content: end;
+}
+
+.navbar-links a{
+    z-index: 10;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size:larger;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar-links a:hover{
+    color: #fff;
+    filter: drop-shadow(0px 0px 10px #ffffff);
+    border-bottom: #ffffff solid 2px;
+}
+
+/* About Me */
+
+.a-1{
+    height: 100vh;
+}
+
+.a-1a{
+    padding-top: 2rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.gambar{
+    margin-left: 2rem;
+    display: flex;
+    position: absolute;
+    padding: 2rem;
+}
+
+.gambar img{
+    width: 300px;
+    height: 100%;
+    filter: blur(10px);
+}
+
+.gambar img:hover{
+    border-radius: 20%;
+    filter: blur(0);
+    filter: drop-shadow(0px 7px 42px #b700ff);
+    transition: filter 0.5s ease, transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+.isi {
+    font-family: "Ruwudu";
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    margin-top: 10%;
+    left: 45%;
+    padding: 2rem;
+}
+
+/* Experience */
+
+.b-1{
+    height: 100vh;
+}
+
+.list-group {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: .25rem;
+}
+
+.list-group-item {
+    text-align: center;
+    position: relative;
+    display: block;
+    font-size: 20px;
+    padding:2rem;
+    margin-block: 0.5rem;
+    margin-inline: 9.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #880abc;
+    border: 2px solid rgba(0, 0, 0, .125);
+    border-radius: 10px;
+}
+
+.judul{
+    color: #fff;
+    text-align: center;
+    padding-top: 2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling section spandk */
+.spandk {
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.spandk h1 {
+    font-family: "Ruwudu";
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Styling untuk card container */
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Styling untuk setiap card-isi */
+.card-isi {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.card-isi:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-isi a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.card-isi img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-isi:hover img {
+    transform: scale(1.05);
+}
+
+.card-isi p {
+    font-family: "Ruwudu";
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* button cyber */
+.cyber {
+    color: #00ff00; /* Warna hijau seperti tema cyber */
+    background-color: #000; /* Background hitam */
+    font-family: 'Courier New', Courier, monospace; /* Font bertema cyber */
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Styling umum untuk tombol */
+.btn {
+    background-color:  #880abc; /* Warna latar belakang hijau */
+    border: none; /* Menghilangkan border default */
+    color: white; /* Warna teks putih */
+    padding: 4px 10px; /* Padding tombol */
+    text-align: center; /* Menyelaraskan teks di tengah */
+    text-decoration: none; /* Menghilangkan underline */
+    display: inline-block; /* Membuat tombol inline */
+    font-size: 16px; /* Ukuran font */
+    margin: 10px 2px; /* Jarak antar tombol */
+    cursor: pointer; /* Menambahkan kursor pointer */
+    border-radius: 8px; /* Sudut tombol melengkung */
+    transition: all 0.3s ease; /* Efek transisi untuk perubahan */
+}
+
+/* Efek hover pada tombol */
+.btn:hover {
+    background-color: #b700ff; /* Warna latar belakang berubah saat hover */
+    transform: scale(1.05); /* Membesarkan tombol sedikit saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan pada tombol */
+}
+
+/* Efek saat tombol aktif ditekan */
+.btn:active {
+    background-color: #b700ff; /* Warna latar belakang saat tombol ditekan */
+    transform: scale(0.98); /* Mengurangi ukuran tombol saat ditekan */
+}
+
+/* Efek saat tombol tidak aktif (disabled) */
+.btn:disabled {
+    background-color: #b700ff; /* Warna latar belakang saat disabled */
+    cursor: not-allowed; /* Mengubah kursor saat tombol disabled */
+}
+
+
+/* Contact */
+
+.c-1{
+    height: 100vh;
+}
+
+.footer {
+    font-family: sans-serif;
+    height: 4rem;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #7f05a8;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.E{
+    padding-top: 6rem;
+    background-color: #5f006b;
+    border-radius: 60px 60px 0 0 ;
+}
+
+/* responsiv */
+
+@media (max-width:1024px){
+    html{
+        font-size: 75%;
+    }
+}
+
+@media (max-width:760px){
+
+    html {
+        font-size: 62.5%;
+    }
+
+    .toggle-button{
+        position: absolute;
+        z-index: 10;
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links a {
+        font-size: 15px;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px;
+        border-top: 1px solid #444;
+    }
+
+    .navbar-links.active {
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        display: flex;
+        background-color: #000000bb;
+    }
+
+    .card {
+        padding-inline: 6rem;
+        gap: 15px;
+    }
+
+    .card-isi {
+        max-width: 100%;
+    }
+
+    /* nama */
+    .nama {
+        font-size: 50px;
+        padding-top: 30%; /* Tambahkan ruang lebih untuk penyesuaian */
+    }
+
+    /* about */
+    .gambar{
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+
+    .gambar img {
+        width: 200px;
+        height: 100%;
+        filter: blur(10px);
+    }
+
+    .isi{
+        left: 0;
+    }
+
+    /* galery */
+    .b-1 {
+        height: 100%;
+    }
+
+    /* form */
+
+    form {
+        padding-inline: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .E{
+        padding-top: 3rem;
+        background-color: #880abc;
+        border-radius: 30px 30px 0 0 ;
+    }
+
+    #backToTopButton {
+        font-size: 10px;
+        position: fixed;
+        bottom: 100px;
+        right: 20px;
+        display: none;
+        background-color: #880abc;
+        color: white;
+        padding: 6px 8px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .spandk h1 {
+        font-size: 25px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+
+    .card-isi p {
+        background-color: #b700ff;
+        color: white;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .nama {
+        font-family: "Ruwudu";
+        font-size: 20px; 
+        padding-top: 57%; 
+        line-height: 1.2; 
+    }
+
+    .nama span {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    @keyframes animasiNama {
+        0% {
+        color: rgb(62, 62, 62);
+        font-size: 35px;
+    }
+        50% {
+        color: #ffffff;
+        font-size: 35px;
+        }
+        100% {
+        color: black;
+        font-size: 35px;
+        }
+    }
+}
