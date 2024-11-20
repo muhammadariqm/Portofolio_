@@ -95,7 +95,7 @@ body{
 
 .Nav{
     height: 100vh;
-    background-image: url("/img/purple.webp");
+    background-image: url("img/purple.webp");
     background-position: center;
     background-size: cover;
 }
