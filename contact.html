@@ -48,8 +48,8 @@ html, body {
         }
 
         .alert-success {
-            color: #141619;
-            background-color: #00e47c;
+            color: #fff;
+            background-color: #880abc;
         }
 
         .btn-loading{
@@ -58,7 +58,7 @@ html, body {
 
         .btn-home{
             border: none;
-            background-color: #1672f2;
+            background-color: #880abc;
             margin: 1rem;
             display: flex;
             justify-content: flex-start;
@@ -75,6 +75,22 @@ html, body {
     padding-left: 1rem; /* Atur padding agar tidak melebihi grid */
     padding-right: 1rem;
 }
+
+.btn-custom {
+        background-color: #880abc; /* Warna kustom */
+        border-color: #880abc; /* Warna border */
+        color: white; /* Warna teks */
+    }
+
+    .btn-custom:hover {
+        background-color: #b700ff; /* Warna saat hover */
+        border-color: #b700ff; /* Border saat hover */
+    }
+
+    .btn-custom:disabled {
+        background-color: #bb88dd; /* Warna saat disabled */
+        border-color: #bb88dd; /* Border saat disabled */
+    }
 
 
     </style>
@@ -104,8 +120,8 @@ html, body {
                     <textarea class="form-control" id="pesan" rows="5" name="Pesan" required></textarea>
                 </div>
                 <!---->
-                <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
-                <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                    <button type="submit" class="btn btn-custom btn-kirim">Kirim Pesan</button>
+                    <button class="btn btn-custom btn-loading d-none" type="button" disabled>
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
                 </button>

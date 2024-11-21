@@ -9,6 +9,7 @@ body{
 }
 
 #backToTopButton {
+    font-family: "Ruwudu";
     position: fixed;
     bottom: 100px;
     right: 20px;
@@ -171,7 +172,7 @@ body{
     display: flex;
     justify-content: end;
     position: absolute;
-    margin-top: 10%;
+    margin-top: 5%;
     left: 45%;
     padding: 2rem;
 }
@@ -278,9 +279,9 @@ body{
 
 /* button cyber */
 .cyber {
-    color: #00ff00; /* Warna hijau seperti tema cyber */
+    font-family: "Ruwudu";
+    color: #fff; /* Warna hijau seperti tema cyber */
     background-color: #000; /* Background hitam */
-    font-family: 'Courier New', Courier, monospace; /* Font bertema cyber */
     padding: 10px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
@@ -288,6 +289,7 @@ body{
 
 /* Styling umum untuk tombol */
 .btn {
+    font-family: "Ruwudu";
     background-color:  #880abc; /* Warna latar belakang hijau */
     border: none; /* Menghilangkan border default */
     color: white; /* Warna teks putih */
@@ -329,7 +331,7 @@ body{
 }
 
 .footer {
-    font-family: sans-serif;
+    font-family: "Ruwudu";
     height: 4rem;
     color: white;
     text-align: center;
@@ -438,6 +440,7 @@ body{
 
     .isi{
         left: 0;
+        padding-top: 3rem;
     }
 
     /* galery */
@@ -455,6 +458,41 @@ body{
 }
 
 @media (max-width: 480px) {
+
+    .btn {
+        font-family: "Ruwudu";
+        background-color:  #880abc; /* Warna latar belakang hijau */
+        border: none; /* Menghilangkan border default */
+        color: white; /* Warna teks putih */
+        padding: 4px 10px; /* Padding tombol */
+        text-align: center; /* Menyelaraskan teks di tengah */
+        text-decoration: none; /* Menghilangkan underline */
+        display: inline-block; /* Membuat tombol inline */
+        font-size: 10px; /* Ukuran font */
+        margin: 10px 2px; /* Jarak antar tombol */
+        cursor: pointer; /* Menambahkan kursor pointer */
+        border-radius: 8px; /* Sudut tombol melengkung */
+        transition: all 0.3s ease; /* Efek transisi untuk perubahan */
+    }
+
+    .a-1 {
+        height: 100%;
+    }
+
+    .isi {
+        font-family: "Ruwudu";
+        color: #fff;
+        display: flex;
+        justify-content: end;
+        position: relative;
+        margin-top: 5%;
+        left: 0;
+        padding: 2rem;
+    }
+
+    .b-1 {
+        height: 100%;
+    }
 
     .E{
         padding-top: 3rem;
