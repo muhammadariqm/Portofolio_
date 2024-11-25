@@ -37,7 +37,7 @@ body{
     animation: animasiNama 2s infinite;
 }
 
-@keyframes animasiNama {
+/* @keyframes animasiNama {
     0% {
     color: rgb(62, 62, 62);
     font-size: 60px;
@@ -50,7 +50,7 @@ body{
     color: black;
     font-size: 60px;
     }
-}
+} */
 
 /* Container untuk bintang */
 .stars {
@@ -156,9 +156,11 @@ body{
     width: 300px;
     height: 100%;
     filter: blur(10px);
+    cursor: pointer;
 }
 
 .gambar img:hover{
+    cursor: pointer;
     border-radius: 20%;
     filter: blur(0);
     filter: drop-shadow(0px 7px 42px #b700ff);
@@ -177,6 +179,25 @@ body{
     padding: 2rem;
 }
 
+body, html {
+    overflow-x: hidden; /* Menyembunyikan scrollbar horizontal */
+  }
+
+.isi p {
+    opacity: 0; /* Awalnya tidak terlihat */
+    transform: translateX(100px); /* Geser elemen ke kanan (untuk paragraf pertama) */
+    transition: opacity 1s ease, transform 1s ease; /* Efek transisi yang lebih halus */
+  }
+  
+  .isi p.left {
+    transform: translateX(-100px); /* Geser elemen ke kiri (untuk paragraf kedua) */
+  }
+  
+  .isi p.show {
+    opacity: 1; /* Membuat elemen muncul */
+    transform: translateX(0); /* Geser ke posisi semula */
+  }
+  
 /* Experience */
 
 .b-1{
@@ -420,9 +441,25 @@ body{
     }
 
     /* nama */
-    .nama {
+    /* .nama {
         font-size: 50px;
-        padding-top: 30%; /* Tambahkan ruang lebih untuk penyesuaian */
+        padding-top: 30%; 
+    } */
+
+    .nama {
+        font-family: Arial, sans-serif;
+        font-size: 2rem;
+        color: #fff;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #ffffff; /* Efek kursor */
+        width: fit-content;
+        animation: blink 0.5s step-end infinite;
+    }
+    
+    @keyframes blink {
+        from { border-color: transparent; }
+        to { border-color: #333; }
     }
 
     /* about */
@@ -458,6 +495,19 @@ body{
 }
 
 @media (max-width: 480px) {
+
+    .gambar img{
+        width: 210px;
+        height: 100%;
+        filter: blur(0);
+        
+    }
+    
+    .gambar img:hover{
+        filter: drop-shadow(0px 7px 42px #b700ff);
+        transition: filter 0.5s ease, transform 0.5s ease;
+        transform: scale(1.1);
+    }
 
     .btn {
         font-family: "Ruwudu";
@@ -522,18 +572,19 @@ body{
     }
 
     .card-isi p {
-        background-color: #b700ff;
-        color: white;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
         margin: 0;
         font-size: 18px;
         font-weight: 500;
     }
     
     .nama {
+        width: 99%;
         font-family: "Ruwudu";
-        font-size: 20px; 
-        padding-top: 57%; 
-        line-height: 1.2; 
+        font-size: 20px;
+        padding-top: 57%;
+        line-height: 1.2;
     }
 
     .nama span {
@@ -554,5 +605,15 @@ body{
         color: black;
         font-size: 35px;
         }
+    }
+
+    .social-icons {
+        margin-bottom: 0;
+    }
+
+    .footer p {
+        background-color: #880abc;
+        margin: 0;
+        font-size: 14px;
     }
 }

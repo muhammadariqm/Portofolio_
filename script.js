@@ -52,3 +52,78 @@ document.getElementById("cyberButton").addEventListener("click", function () {
     webdevContent.style.display = "none";
     cyberContent.style.display = "block";
 });
+
+// tetx animasi
+const text = "Muhammad Ariq Mubarak";
+const span = document.querySelector(".nama span");
+
+let index = 0;
+let isDeleting = false;
+
+function typeEffect() {
+  let delay = 100; // Kecepatan mengetik default
+  let cursor = "|"; // Simbol kursor
+
+  if (!isDeleting) {
+    // Mengetik teks
+    span.textContent = text.slice(0, index + 1) + cursor;
+    index++;
+  } else {
+    // Menghapus teks
+    span.textContent = text.slice(0, index) + cursor;
+    index--;
+    delay = 50; // Kecepatan lebih cepat saat menghapus
+  }
+
+  // Jeda saat selesai mengetik seluruh teks
+  if (index === text.length) {
+    isDeleting = true;
+    delay = 1500; // Jeda 1.5 detik sebelum menghapus
+  }
+
+  // Jeda saat selesai menghapus seluruh teks
+  if (index === 0 && isDeleting) {
+    isDeleting = false;
+    delay = 1000; // Jeda 1 detik sebelum mengetik ulang
+    span.textContent = cursor; // Tampilkan hanya kursor
+  }
+
+  setTimeout(typeEffect, delay); // Menjadwalkan ulang fungsi
+}
+
+document.addEventListener("DOMContentLoaded", typeEffect);
+
+// 
+document.addEventListener("DOMContentLoaded", () => {
+    const paragraphs = document.querySelectorAll(".isi p");
+  
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return rect.top <= window.innerHeight && rect.bottom >= 0; // Lebih responsif saat elemen masuk viewport
+    }
+  
+    function handleScroll() {
+      paragraphs.forEach((para, index) => {
+        if (isInViewport(para)) {
+          if (!para.classList.contains("show")) {
+            // Menambahkan kelas show saat paragraf masuk viewport
+            para.classList.add("show");
+  
+            // Menambahkan kelas left atau right berdasarkan urutan
+            if (index % 2 === 0) {
+              para.classList.add("left");
+            } else {
+              para.classList.add("right");
+            }
+          }
+        }
+      });
+    }
+  
+    // Jalankan saat scroll
+    window.addEventListener("scroll", handleScroll);
+  
+    // Jalankan pengecekan saat halaman pertama kali dimuat
+    handleScroll();
+  });
+  
