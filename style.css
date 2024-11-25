@@ -497,13 +497,7 @@ body{
         width: 210px;
         height: 100%;
         filter: blur(0);
-        
-    }
-    
-    .gambar img:hover{
         filter: drop-shadow(0px 7px 42px #b700ff);
-        transition: filter 0.5s ease, transform 0.5s ease;
-        transform: scale(1.1);
     }
 
     .btn {
