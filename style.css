@@ -6,6 +6,7 @@
 body{
     font-family: "Ruwudu";
     background-color: #000;
+    overflow-x: hidden;
 }
 
 #backToTopButton {
@@ -178,10 +179,6 @@ body{
     left: 45%;
     padding: 2rem;
 }
-
-body, html {
-    overflow-x: hidden; /* Menyembunyikan scrollbar horizontal */
-  }
 
 .isi p {
     opacity: 0; /* Awalnya tidak terlihat */
