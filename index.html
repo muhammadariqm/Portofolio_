@@ -1,142 +1,234 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portofolio</title>
-    <link rel="shortcut icon" href="img/star.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/star.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ruwudu:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ruwudu:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigasi -->
     <nav class="Nav">
-        <!-- bintang -->
-        <div class="stars">
-            <div class="star" style="top: 10%; left: 20%;"></div>
-            <div class="star" style="top: 17%;left: 88%;"></div>
-            <div class="star" style="top: 18%;left: 92%;"></div>
-            <div class="star" style="top: 19%;left: 30%;"></div>
-            <div class="star" style="top: 17%;left: 80%;"></div>
-            <div class="star" style="top: 15%;left: 90%;"></div>
-            <div class="star" style="top: 13%;left: 5%;"></div>
-            <div class="star" style="top: 17%;left: 10%;"></div>
-            <div class="star" style="top: 9%;left: 27%;"></div>
-            <div class="star" style="top: 16%;left: 85%;"></div>
-            <div class="star" style="top: 25%; left: 77%;"></div>
-            <div class="star" style="top: 13%;left: 24%;"></div>
+      <!-- bintang -->
+      <div class="stars">
+        <div class="star" style="top: 10%; left: 20%"></div>
+        <div class="star" style="top: 17%; left: 88%"></div>
+        <div class="star" style="top: 18%; left: 92%"></div>
+        <div class="star" style="top: 19%; left: 30%"></div>
+        <div class="star" style="top: 17%; left: 80%"></div>
+        <div class="star" style="top: 15%; left: 90%"></div>
+        <div class="star" style="top: 13%; left: 5%"></div>
+        <div class="star" style="top: 17%; left: 10%"></div>
+        <div class="star" style="top: 9%; left: 27%"></div>
+        <div class="star" style="top: 16%; left: 85%"></div>
+        <div class="star" style="top: 25%; left: 77%"></div>
+        <div class="star" style="top: 13%; left: 24%"></div>
+      </div>
+      <div class="Navbar">
+        <a href="javascript:void(0);" class="toggle-button" id="hamburger">
+          <i><img src="img/align-left.svg" alt="" /></i>
+        </a>
+        <div class="navbar-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">My Project</a>
+          <a href="#experience2">Experience</a>
+          <a href="contact.html">Contact</a>
         </div>
-        <div class="Navbar">
-            <a href="javascript:void(0);" class="toggle-button" id="hamburger">
-                <i><img src="img/align-left.svg" alt=""></i>
-            </a>
-            <div class="navbar-links" id="nav-links">
-                <a href="#about">About</a>
-                <a href="#experience">My Project</a>
-                <!-- <a href="#galery">Galery</a> -->
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-        <h1 class="nama"><span>Muhammad Ariq Mubarak</span></h1>
+      </div>
+      <h1 class="nama"><span>Muhammad Ariq Mubarak</span></h1>
     </nav>
 
     <!-- About Me -->
     <section class="a-1" id="about">
-        <div class="spandk">
-            <h1>About Me</h1>
-            <div class="gambar">
-                <img src="img/p.png" alt="ariq">
-            </div>
-            <!-- <div class="isi">
+      <div class="spandk">
+        <h1>About Me</h1>
+        <div class="gambar">
+          <img src="img/IMG_7661.JPG" alt="ariq" />
+        </div>
+        <!-- <div class="isi">
                 <p>Hi, I'm a student at Universitas Teknologi Digital Indonesia majoring in Computer Engineering with skills in web and mobile development. I've always been someone who has both a creative and logistical side. When I discovered web design in college, I realized it would be a great fit. I can create sites for individuals and small businesses. Sometimes when I have free time I take the time to hone my skills</p>
             </div> -->
-            
-            <div class="isi">
-                <p id="webdevContent">
-                    Hi! I’m Muhammad Ariq Mubarak, a Computer Engineering student at the Indonesian Digital Technology University. I have a strong interest in software development, particularly in web and mobile applications. Currently, I enjoy working on various projects involving HTML, CSS, PHP, JavaScript, and Dart.
-                    <br>
-                    <br>
-                    I am skilled at creating dynamic and interactive web pages using HTML, CSS, and JavaScript. I also build robust server-side applications with PHP and manage databases like MySQL, MongoDB, and MariaDB. Additionally, I am diving into Dart for mobile development with Flutter, which is exciting due to its efficiency and flexibility in building cross-platform applications.
-                    <br>
-                    <br>
-                    I am also interested in exploring Business Intelligence, learning about data analysis, data mining, and building efficient data warehouses. Whether developing small applications or large systems, I always focus on creating scalable, efficient, and user-friendly solutions. I also have expertise in using Figma to design appealing and functional user interfaces.
-                </p>
-                <p id="cyberContent" class="cyber" style="display: none;">
-                    Throughout my studies, I have developed a strong interest in the field of cybersecurity, which is becoming increasingly important in today's digital world. I have explored various aspects of cybersecurity, from network security to threat analysis, risk management, and digital forensics. I am particularly passionate about ensuring data integrity, confidentiality, and availability through the implementation of secure systems and protocols.
-                    <br>
-                    <br>
-                    During my learning journey, I have focused on identifying vulnerabilities in various systems, understanding attack vectors, and studying encryption techniques to secure communications. I have also gained experience with several tools and techniques used to combat cyber threats, including firewalls, intrusion detection systems (IDS), Public Key Infrastructure (PKI), penetration testing, and digital forensics. My exploration in digital forensics has allowed me to understand how to investigate and analyze digital evidence to trace cyber incidents and uncover malicious activities.
-                    <br>
-                    <br>
-                    Cybersecurity is not just about protecting systems but also about cultivating a proactive mindset to anticipate and mitigate potential threats. I am excited to continue expanding my knowledge in this field and applying it in real-world scenarios to contribute to the security and safety of the digital environment.
-                </p>
-            </div>
-            <button id="webDevButton" class="btn">Web Dev</button>
-            <button id="cyberButton" class="btn">Cybersecurity</button>          
+
+        <div class="isi">
+          <p id="webdevContent">
+            Hi! I’m Muhammad Ariq Mubarak, a Computer Engineering student at the
+            Indonesian Digital Technology University. I have a strong interest
+            in software development, particularly in web and mobile
+            applications. Currently, I enjoy working on various projects
+            involving HTML, CSS, PHP, JavaScript, and Dart.
+            <br />
+            <br />
+            I am skilled at creating dynamic and interactive web pages using
+            HTML, CSS, and JavaScript. I also build robust server-side
+            applications with PHP and manage databases like MySQL, MongoDB, and
+            MariaDB. Additionally, I am diving into Dart for mobile development
+            with Flutter, which is exciting due to its efficiency and
+            flexibility in building cross-platform applications.
+            <br />
+            <br />
+            I am also interested in exploring Business Intelligence, learning
+            about data analysis, data mining, and building efficient data
+            warehouses. Whether developing small applications or large systems,
+            I always focus on creating scalable, efficient, and user-friendly
+            solutions. I also have expertise in using Figma to design appealing
+            and functional user interfaces.
+          </p>
+          <p id="cyberContent" class="cyber" style="display: none">
+            Throughout my studies, I have developed a strong interest in the
+            field of cybersecurity, which is becoming increasingly important in
+            today's digital world. I have explored various aspects of
+            cybersecurity, from network security to threat analysis, risk
+            management, and digital forensics. I am particularly passionate
+            about ensuring data integrity, confidentiality, and availability
+            through the implementation of secure systems and protocols.
+            <br />
+            <br />
+            During my learning journey, I have focused on identifying
+            vulnerabilities in various systems, understanding attack vectors,
+            and studying encryption techniques to secure communications. I have
+            also gained experience with several tools and techniques used to
+            combat cyber threats, including firewalls, intrusion detection
+            systems (IDS), Public Key Infrastructure (PKI), penetration testing,
+            and digital forensics. My exploration in digital forensics has
+            allowed me to understand how to investigate and analyze digital
+            evidence to trace cyber incidents and uncover malicious activities.
+            <br />
+            <br />
+            Cybersecurity is not just about protecting systems but also about
+            cultivating a proactive mindset to anticipate and mitigate potential
+            threats. I am excited to continue expanding my knowledge in this
+            field and applying it in real-world scenarios to contribute to the
+            security and safety of the digital environment.
+          </p>
         </div>
+        <button id="webDevButton" class="btn">Web Dev</button>
+        <button id="cyberButton" class="btn">Cybersecurity</button>
+      </div>
     </section>
 
     <!-- Experience -->
     <section class="b-1" id="experience">
-        <div class="spandk">
-            <h1>My Project</h1>
-            <div class="card">
-                <div class="card-isi">
-                    <a href="https://boy03.github.io/Al-quran/index.html" target="_blank">
-                        <img src="img/a.jpg" alt="ariq">
-                        <p>Visit</p>
-                    </a>
-                </div>
-                <div class="card-isi">
-                    <a href="https://boy03.github.io/Login/index.html" target="_blank">
-                        <img src="img/c.jpg" alt="ariq">
-                        <p>Visit</p>
-                    </a>
-                </div>
-                <div class="card-isi">
-                    <a href="https://boy03.github.io/himatek/frist.html" target="_blank">
-                        <img src="img/b.jpg" alt="ariq">
-                        <p>Visit</p>
-                    </a>
-                </div>
-                <div class="card-isi">
-                    <a href="https://github.com/boy03/cek-kodam" target="_blank">
-                        <img src="img/s.jpg" alt="ariq">
-                        <p>Visit</p>
-                    </a>
-                </div>
-                <div class="card-isi">
-                    <a href="https://boy03.github.io/Chat-bot/bot.html" target="_blank">
-                        <img src="img/e.jpg" alt="ariq">
-                        <p>Visit</p>
-                    </a>
-                </div>
-                <!-- <div class="card-isi">
+      <div class="spandk">
+        <h1>My Project</h1>
+        <div class="card">
+          <div class="card-isi">
+            <a
+              href="https://boy03.github.io/Al-quran/index.html"
+              target="_blank"
+            >
+              <img src="img/a.jpg" alt="ariq" />
+              <p>Visit</p>
+            </a>
+          </div>
+          <div class="card-isi">
+            <a href="https://boy03.github.io/Login/index.html" target="_blank">
+              <img src="img/c.jpg" alt="ariq" />
+              <p>Visit</p>
+            </a>
+          </div>
+          <div class="card-isi">
+            <a
+              href="https://boy03.github.io/himatek/frist.html"
+              target="_blank"
+            >
+              <img src="img/b.jpg" alt="ariq" />
+              <p>Visit</p>
+            </a>
+          </div>
+          <div class="card-isi">
+            <a href="https://github.com/boy03/cek-kodam" target="_blank">
+              <img src="img/s.jpg" alt="ariq" />
+              <p>Visit</p>
+            </a>
+          </div>
+          <div class="card-isi">
+            <a href="https://boy03.github.io/Chat-bot/bot.html" target="_blank">
+              <img src="img/e.jpg" alt="ariq" />
+              <p>Visit</p>
+            </a>
+          </div>
+          <!-- <div class="card-isi">
                     <a href="">
                         <img src="img/d.jpg" alt="ariq">
                         <p>Visit</p>
                     </a>
                 </div> -->
-            </div>
-
-            <!-- <div class="judul">
-                <h3>( Organizational Experience )</h3>
-            </div>
-            <ul class="list-group">
-                <li class="list-group-item">Pengkaderan  |  WAMIKA (Wahana Aspirasi Mahasiswa Islam Kampus)</li>
-                <li class="list-group-item">Bendahara  |  Karang Taruna Botorawi</li>
-                <li class="list-group-item">Humas  | HIMATEK (Himpunan Mahasiswa Teknik Komputer)</li>
-            </ul> -->
         </div>
+      </div>
     </section>
+
+    <section class="c-1" id="experience2">
+      <div class="spandk">
+        <h1>Organizational Experience</h1>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          Pengkaderan | WAMIKA (Wahana Aspirasi Mahasiswa Islam Kampus)
+          <hr />
+          <p style="font-size: medium; margin-top: 4px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+            perspiciatis?Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Quaerat consequuntur assumenda debitis hic explicabo quo sit
+            dolorem iure quas atque?
+          </p>
+        </li>
+        <li class="list-group-item">
+          Bendahara | Karang Taruna Wira Widya Botorawi
+          <hr />
+          <p style="font-size: medium; margin-top: 4px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+            perspiciatis?Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Quaerat consequuntur assumenda debitis hic explicabo quo sit
+            dolorem iure quas atque?
+          </p>
+        </li>
+        <li class="list-group-item">
+          Ketua Romadhon | Karang Taruna Wira Widya Botorawi
+          <hr />
+          <p style="font-size: medium; margin-top: 4px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+            perspiciatis?Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Quaerat consequuntur assumenda debitis hic explicabo quo sit
+            dolorem iure quas atque?
+          </p>
+        </li>
+        <li class="list-group-item">
+          Humas | HIMATEK (Himpunan Mahasiswa Teknik Komputer)
+          <hr />
+          <p style="font-size: medium; margin-top: 4px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+            perspiciatis?Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Quaerat consequuntur assumenda debitis hic explicabo quo sit
+            dolorem iure quas atque?
+          </p>
+        </li>
+        <li class="list-group-item">
+          Perkap | HIMATEK (Himpunan Mahasiswa Teknik Komputer)
+          <hr />
+          <p style="font-size: medium; margin-top: 4px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+            perspiciatis?Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Quaerat consequuntur assumenda debitis hic explicabo quo sit
+            dolorem iure quas atque?
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section></section>
 
     <button onclick="scrollToTop()" id="backToTopButton">Back to ⬆️</button>
 
@@ -152,20 +244,31 @@
     </section> -->
 
     <section class="E" id="footer">
-        <div class="footer">
-            <div class="social-icons">
-                <a href="https://www.instagram.com/kurik.kurik.boy/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <!-- <a href="https://www.facebook.com/kurikkurik.ariq" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
-                <!-- <a href="hhttps://www.tiktok.com/@ninjaghost_" target="_blank"><i class="fab fa-tiktok"></i></a> -->
-                <a href="https://github.com/boy03" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/muhammad-ariq-mubarak-7bb71b253/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://wa.me/088239351320" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
-            <p>&copy; 2024 Si BOY.</p>
+      <div class="footer">
+        <div class="social-icons">
+          <a href="https://www.instagram.com/kurik.kurik.boy/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <!-- <a href="https://www.facebook.com/kurikkurik.ariq" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
+          <a href="https://www.tiktok.com/@ninjaghost_" target="_blank"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+          <a href="https://github.com/muhammadariqm" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/muhammad-ariq-mubarak-7bb71b253/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://wa.me/088239351320" target="_blank"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
         </div>
+        <p>&copy; 2024 Si BOY.</p>
+      </div>
     </section>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
