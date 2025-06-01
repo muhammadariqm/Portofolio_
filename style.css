@@ -341,6 +341,32 @@ body{
     cursor: not-allowed; /* Mengubah kursor saat tombol disabled */
 }
 
+/* skils */
+.skill {
+  display: flex;
+  flex-wrap: wrap; /* Supaya baris baru otomatis jika layar kecil */
+  gap: 20px; /* Jarak antar skill */
+  justify-content: center; /* Bisa juga center atau space-between */
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px; /* Atur lebar tetap agar rapi */
+}
+
+.skill-item img {
+  width: 80px; /* Ukuran gambar seragam */
+  height: 80px;
+  object-fit: contain; /* Jaga aspek rasio tanpa crop */
+}
+
+.skill-item p {
+  margin-top: 8px;
+  text-align: center;
+}
+
 
 /* Contact */
 
@@ -617,6 +643,39 @@ body{
         font-size: 35px;
         }
     }
+
+    .list-group-item {
+    text-align: left;
+    position: relative;
+    display: block;
+    font-size: 20px;
+    padding: 2rem;
+    margin-block: 0.5rem;
+    margin: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #880abc;
+    border: 2px solid rgba(0, 0, 0, .125);
+    border-radius: 10px;
+}
+
+    .skill {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .skill-item {
+    width: 80px;
+  }
+
+  .skill-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skill-item p {
+    font-size: 12px;
+  }
 
     .social-icons {
         margin-bottom: 0;
