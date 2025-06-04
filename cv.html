@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download File</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #2f1f3e;
+      }
+
+      .download-container {
+        background-color: #ebc890;
+        border-radius: 0 0 20px 20px;
+        padding: 30px;
+        text-align: center;
+        width: 247px;
+        height: 312px;
+      }
+
+      .image-placeholder {
+        /* background-color: #8A2BE2; */
+        border-radius: 10px;
+        height: 118px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .image-placeholder img {
+        z-index: -1;
+        width: 300px;
+        height: 420px;
+      }
+
+      .download-button {
+        background-color: #ffffff;
+        border: none;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        padding: 10px 30px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .download-button:hover {
+        background-color: #836fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="download-container">
+      <div class="image-placeholder">
+        <img src="img/cv1.jpg" alt="Image" />
+      </div>
+      <a href="img/CV MUHAMMAD ARIQ MUBARAK.pdf" download>
+        <button class="download-button">Download</button>
+      </a>
+    </div>
+  </body>
+</html>
