@@ -61,7 +61,6 @@ body{
     overflow: hidden;
     top: 0;
     left: 0;
-    z-index: 2;
   }
   
   /* Bintang */
@@ -115,8 +114,9 @@ body{
 }
 
 .navbar-links{
+    filter: drop-shadow(0px 0px 10px #f700ff);
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 
 .navbar-links a{
